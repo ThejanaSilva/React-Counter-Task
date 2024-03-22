@@ -11,15 +11,15 @@ function App() {
   }
 
   const handleReset = () => (
-    setCount(0)
+    changeVar1(0)
   )
 
   const handleAdd5 = () => (
-    setCount(count +5)
+    changeVar1(var1 +5)
   )
 
   const handleMini3 = () => (
-    setCount(count -3)
+    changeVar1(var1 -3)
   )
     
   return <div>
