@@ -27,11 +27,11 @@ function App() {
     <button onClick={decrease}>Reduce by one</button>
     <button onClick={increase}>Increase by one</button>
 
-    <button onClick={handleReset} className='btn btn-secondary mn-3'> Reset </button>
+    <button onClick={handleReset}> Reset to Zero </button>
 
-    <button onClick={handleAdd5} className='btn btn-add mn-3'> Add+5 </button>
+    <button onClick={handleAdd5}> Add Five </button>
 
-    <button onClick={handleMini3} className='btn btn-mini mn-3'> Minimize-3 </button>
+    <button onClick={handleMini3}> Deduct Three </button>
     </div>
 
 }
