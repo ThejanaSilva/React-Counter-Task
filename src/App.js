@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 
-function App() {
+export default function App() {
   const [var1, changeVar1] = useState(0)
   function increase(){
     changeVar1 (var1+1)
@@ -10,31 +10,31 @@ function App() {
     changeVar1(var1-1)
   }
 
-  const handleReset = () => (
+  function Reset() {
     changeVar1(0)
-  )
+  }
 
-  const handleAdd5 = () => (
-    changeVar1(var1 +5)
-  )
+  function Add() {
+    changeVar1(var1+5)
+  }
 
-  const handleMini3 = () => (
-    changeVar1(var1 -3)
-  )
+  function Minimize() {
+    changeVar1(var1-3)
+  }
     
   return <div>
     <h1>{var1}</h1>
     <button onClick={decrease}>Reduce by one</button>
     <button onClick={increase}>Increase by one</button>
 
-    <button onClick={handleReset}> Reset to Zero </button>
+    <button onClick={Reset}> Reset to Zero </button>
 
-    <button onClick={handleAdd5}> Add Five </button>
+    <button onClick={Add}> Add Five </button>
 
-    <button onClick={handleMini3}> Deduct Three </button>
+    <button onClick={Minimize}> Deduct Three </button>
     </div>
 
 }
 
-export default App;
+//export default App;
  
